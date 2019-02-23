@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function taxCalculator(taxPercentage){
+
+        var percentage = taxPercentage;
+
+        return function(amount){
+
+            return amount * percentage/100;
+
+        }
+
+    }
+
+    const calc = taxCalculator(30);
+    console.log(calc(1000));
+
+</script>
+
+</body>
+</html>
